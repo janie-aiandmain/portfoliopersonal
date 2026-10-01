@@ -1,0 +1,13 @@
+# Repository / build files that should not be published as website assets
+.git/
+.github/
+node_modules/
+wrangler.jsonc
+package.json
+bun.lock
+bun.lockb
+package-lock.json
+yarn.lock
+README.md
+DEPLOY.md
+*.zip
