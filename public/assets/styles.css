@@ -32,3 +32,20 @@ h1{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:clamp
 .notice{font-size:.85rem;color:#697487;border-top:1px solid var(--line);padding-top:14px;margin-top:20px}
 @media(max-width:900px){.hero-grid,.content-grid,.split{grid-template-columns:1fr}.hero{padding-top:60px}.portrait-card{max-width:520px}.metric-grid,.kpi-row{grid-template-columns:repeat(2,1fr)}.cards,.case-grid{grid-template-columns:1fr}.framework{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}.nav{display:none;position:absolute;top:78px;left:0;right:0;background:white;padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.nav.open{display:flex}.menu-btn{display:block}.row{grid-template-columns:1fr}.row.header{display:none}}
 @media(max-width:560px){.container{width:min(100% - 28px,var(--max))}.hero{padding:48px 0}.metric-grid,.kpi-row,.framework{grid-template-columns:1fr}.section{padding:60px 0}.nav-wrap{min-height:70px}.nav{top:70px}h1{font-size:3rem}.page-hero{padding-top:56px}}
+
+.artifact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.artifact-card{overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+.artifact-card>img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top center;border-bottom:1px solid var(--line)}
+.artifact-card-body{padding:26px}
+.artifact-card h3{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:1.7rem;line-height:1.1;margin:10px 0}
+.artifact-card p{color:var(--muted)}
+.artifact-figure{margin:30px 0 16px}
+.artifact-figure img{width:100%;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.artifact-figure figcaption{margin-top:10px;color:var(--muted);font-size:.9rem}
+.artifact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.artifact-actions .button{font-size:.9rem}
+.public-service-grid{display:grid;grid-template-columns:.85fr 1.15fr .9fr;gap:32px;align-items:start}
+.public-service-photo{margin:0}
+.public-service-photo img{aspect-ratio:1.45/1;object-fit:cover}
+.public-service-committee{height:100%}
+@media(max-width:900px){.artifact-grid,.public-service-grid{grid-template-columns:1fr}.artifact-card>img{aspect-ratio:auto}}
